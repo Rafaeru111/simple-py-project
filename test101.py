@@ -4,6 +4,8 @@ import pyttsx3
 #Global VAriable
 engine = pyttsx3.init()
 
+
+# 12 hahaha 
 def speech_to_text():
     # recognizer ng speech
     recognizer = sr.Recognizer()
@@ -35,6 +37,9 @@ def main():
         recognized_text = speech_to_text()
         
         magic_word = "sabihin mo"
+
+
+#conditional statement kung saan pag may narecognize na voice, anu ang gagawin.
 
         if recognized_text:
             print("You said:", recognized_text)
